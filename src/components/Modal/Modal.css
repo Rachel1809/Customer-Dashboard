@@ -1,0 +1,103 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    
+    
+}
+
+.formElement{
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+}
+
+.formHead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-content {
+  background-color: white;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  font-family: var(--profile);
+  font-weight: 600;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: var(--font-content);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-transform: capitalize;
+
+}
+
+input[type="submit"] {
+  background-color: var(--button);
+  color: white;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: var(--font-tab);
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  border: 2px solid var(--text);
+  color: var(--text);
+  font-weight: bold;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
+
+:root {
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --green: rgba(145, 254, 159);
+  --orange: #fca61f;
+  --title: #ffffff;
+  --text: #242d49;
+  --bg-color:  #E8F3F0;
+  --main-theme: #97C4B8;
+  --button: #5b8d81;
+  --gray: #788097;
+  --purple: #BEAEE2;
+  --light-purple: #EDE4FF;
+  --red: #EA4643;
+  --pink: #f66363;
+  --light-pink: #FFE3E1;
+  --shadow: #E4ECEA;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 4px 5px 0px rgba(151, 196, 184, 0.329);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: rgba(151, 196, 184, 0.329);
+  --font-content: 'Quicksand', sans-serif;
+  --font-tab: 'Poppins', sans-serif;
+  --profile: 'Albert Sans', sans-serif;
+}
+
+h3{
+  margin-left: 10px;
+}
+
+h1{
+  font-size: 2.8rem;
+  font-family: var(--font-tab);
+}
+
+h2{
+  font-size: 2.5rem;
+  font-family: var(--font-tab);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--button); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--button); 
+}
+
+.App {
+  /* padding: 0.5rem 3.5rem; */
+  color: var(--text);
+  background: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-content);
+  font-size: 1.2rem;
+}

@@ -1,0 +1,248 @@
+.CustomerList{
+    display: grid;
+    grid-template-rows: 8% 12% auto;
+    gap: 1%;
+    
+}
+
+.CustHeader{
+    display: grid;
+    grid-template-columns: 70% auto;
+    align-items: center;
+}
+
+.customer-table,
+.order-table,
+.employee-table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0px 4px 5px 3px rgba(151, 196, 184, 0.329);
+}
+
+.increase{
+    color: var(--green);
+
+}
+
+.decrease{
+    color: var(--pink);
+}
+
+.customer-table th,
+.order-table th,
+.employee-table th {
+  background-color: var(--button);
+  border: 0.2px solid gainsboro;
+  padding: 8px;
+  text-align: center;
+    flex-wrap: break-word;
+    font-family: var(--font-content);
+    color: white;
+}
+
+tbody{
+    display: block;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: var(--profile);
+}
+
+.Add{
+  background-color: var(--orange);
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-tab);
+  font-weight: bold;
+}
+
+tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    background-color: white;
+
+}
+
+.customer-table td,
+.order-table td,
+.employee-table td {
+  border: 1px solid gainsboro;
+  padding: 8px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.customer-table tr:hover,
+.order-table tr:hover,
+.employee-table tr:hover {
+  background-color: var(--activeItem);
+  border: none;
+}
+
+.button-1 {
+  background-color: var(--orange);
+  border: none;
+  color: var(--text);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 90%;
+  height: 90%;
+  cursor: pointer;
+  font-family: var(--font-content);
+    border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid transparent;
+
+}
+
+.button-2{
+    background-color: var(--red);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 90%;
+  height: 90%;
+  cursor: pointer;
+    font-family: var(--font-content);
+    border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+.function{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.function-export {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  margin-top: 2rem;
+}
+
+.function button{
+    margin: 0 5px;
+    height: 100%;
+}
+
+.button-1:hover,
+.button-2:hover{
+  background-color: white;
+  color: var(--text);
+  border: 2px solid var(--text);
+}
+
+.modal-export {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-export-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  font-family: var(--profile);
+  font-weight: 600;
+}
+
+.formExport{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked:before {
+  content: "\2713";
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 16px;
+  position: absolute;
+  font-weight: bold;
+  top: -1px;
+  left: -1px;
+  background-color: white;
+  color: var(--text);
+  border: 1px solid var(--text);
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px 0px #ccc;
+}
+
+.SearchBar{
+  width: 90%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.SearchBar > input{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--main-theme);
+  box-shadow: 0 0 2px 0px var(--activeItem);
+  font-family: var(--profile);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0 3rem;
+  font-family: var(--font-content);
+}

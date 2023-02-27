@@ -1,0 +1,10 @@
+.HomeGlass {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 12% auto;
+  overflow: hidden;
+  height: 97%;
+  width: 97%;
+  background: var(--glass);
+  border-radius: 2rem;
+}

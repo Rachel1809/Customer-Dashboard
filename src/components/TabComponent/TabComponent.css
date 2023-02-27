@@ -1,0 +1,37 @@
+.tab-list {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tab {
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.tab-item{
+  position: relative;
+  margin-left: 15px;
+  font-family: var(--font-tab);
+
+}
+
+.tab.active {
+  border-left: 7px solid var(--button);
+  background-color: var(--activeItem);
+  font-weight: bold;
+}
+
+.tab-panel {
+  display: none;
+  padding: 20px;
+}
+
+.tab-panel.active {
+  display: block;
+}
